@@ -1,15 +1,14 @@
 # Используйте подходящий базовый образ Node.js
 FROM node:latest
 
-# Установка зависимостей вашего приложения
-# Для примера установим Express.js
-RUN npm install -g express
+WORKDIR /usr/src/app
+
+COPY package*.json ./
+
+RUN npm install
 
 # Копирование исходного кода приложения в образ
-COPY app.js /app.js
-
-# Установка рабочей директории
-WORKDIR /
+COPY *.js .
 
 # Определение команды запуска приложения
 CMD ["node", "app.js"]

@@ -1,0 +1,13 @@
+{
+  "name": "nodejs_docker",
+  "version": "1.0.0",
+  "description": "node.js in docker",
+  "author": "Sergei Alyoshechkin <root@localhost>",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
