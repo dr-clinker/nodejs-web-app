@@ -17,13 +17,8 @@ services:
       - 30000-30009:30000-30009
     command: bash /run.sh
     volumes:
-      - ./:/home/admin
+      - ./:/home/root
     environment:
-      - FTP_USER=admin
       - FTP_USER_NAME= admin
-      - FTP_PASS=admin
+      - FTP_USER_PASS= admin
       - FTP_USER_HOME= /home/admin
-      - FTP_USER_UID= 33
-      - FTP_USER_GID= 33
-      - PUBLICHOST= 192.168.195.130
-      
