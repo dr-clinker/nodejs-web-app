@@ -19,6 +19,6 @@ services:
     volumes:
       - ./:/home/root
     environment:
-      - FTP_USER_NAME= admin
-      - FTP_USER_PASS= admin
-      - FTP_USER_HOME= /home/admin
+      - FTP_USER_NAME= root
+      - FTP_USER_PASS= root
+      - FTP_USER_HOME= /home/root
