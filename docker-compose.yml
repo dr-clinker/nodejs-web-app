@@ -16,7 +16,7 @@ services:
       - 21:21
       - 30000-30009:30000-30009
     volumes:
-      - ./app.js:/home/ftpuser/app.js
+      - ./:/home/ftpuser/
     environment:
       - FTP_USER=root
       - FTP_PASS=toor
