@@ -15,7 +15,7 @@ services:
     ports:
       - 21:21
       - 30000-30009:30000-30009
-    command: bash /run.sh
+#    command: bash /run.sh
     volumes:
       - ./:/home/root
     environment:
