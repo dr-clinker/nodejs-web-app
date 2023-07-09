@@ -16,7 +16,7 @@ services:
       - 21:21
       - 30000-30009:30000-30009
     volumes:
-      - ./:/home/ftpuser/
+      - ./:/home/root/
     environment:
-      - FTP_USER_NAME=root
+      - FTP_USER=root
       - FTP_PASS=toor
